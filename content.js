@@ -66,8 +66,12 @@ if (
   (!searchParams.has("q") || searchParams.has("zx"))
 ) {
   const hideHomepageStuff = () => {
-    const btn = document.querySelector('button[jsname="B6rgad"]');
+    const btn = document.querySelector('.plR5qb');
     if (btn) btn.style.display = "none";
+    const containerElement = document.querySelector('.dRYYxd');
+    if (containerElement) {
+      containerElement.style.setProperty('background', 'none');
+    };
   };
 
   hideHomepageStuff();
