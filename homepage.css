@@ -1,0 +1,11 @@
+/* Homepage styles - hides AI elements on Google homepage */
+
+/* Hide AI button */
+.plR5qb {
+    display: none !important;
+}
+
+/* Remove background from container */
+.dRYYxd {
+    background: none !important;
+}
