@@ -1,0 +1,15 @@
+/* Search page styles - hides AI Mode tab and related elements */
+
+/* Add margin-top to right-hand side */
+#rhs {
+  margin-top: 24px !important;
+}
+
+/* Hide AI Mode tab and related elements */
+.olrp5b,
+.Wm5I1e,
+.related-question-pair:has(.XTvndd),
+[jscontroller="Elkdbc"],
+button.plR5qb {
+  display: none !important;
+}
