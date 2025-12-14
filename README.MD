@@ -22,14 +22,12 @@
 ### Chrome
 
 1. Download the repository and unzip the downloaded folder.
-2. Open the folder, delete `manifest_firefox.json`, and change `manifest_chrome.json` to `manifest.json`.
-3. Open Chrome andgo to `chrome://extensions/`.
+3. Open Chrome and go to `chrome://extensions/`.
 4. Enable Developer Mode and click 'Load unpacked' and select the directory where you unzipped the extension files.
 
 ### Firefox
 
 1. Download the repository and unzip the downloaded folder.
-2. Open the folder, delete `manifest_chrome.json`, and change `manifest_firefox.json` to `manifest.json`.
 3. Go to `about:debugging#/runtime/this-firefox`
 5. Click **Load Temporary Add-on** and select the `manifest.json`. *(Note: this temporary install is only active until Firefox is closed.)*
 
