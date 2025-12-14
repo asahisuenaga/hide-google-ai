@@ -1,8 +1,8 @@
-# Hide Google AI Overviews, Mode, and Audio
+# Hide Google AI Overviews and Mode
 
 <img src="icons/icon128.png" width="64" height="64">
 
-**Remove AI-generated text and audio overviews, and AI Mode in Google search results. Get the extension if you prefer a cleaner, traditional search result page without AI-powered summaries.**
+**Remove AI-generated text overviews and AI Mode in Google search results. Get the extension if you prefer a cleaner, traditional search result page without AI-powered summaries.**
 
 <kbd>
 <div style="border: 1 solid black; padding: 10;">
