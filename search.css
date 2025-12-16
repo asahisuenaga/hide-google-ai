@@ -1,11 +1,12 @@
 /* Add margin-top to right-hand side */
 #rhs {
-  margin-top: 24px !important;
+  margin-top: 12px !important;
 }
 
 /* Hide AI Mode tab and related elements */
 .olrp5b,
 .Wm5I1e,
+.bzXtMb,
 .related-question-pair:has(.XTvndd),
 [jscontroller="Elkdbc"],
 button.plR5qb {
