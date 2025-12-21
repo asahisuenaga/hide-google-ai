@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Hide Google AI Overviews and Mode",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Remove AI Overviews and Mode from search results for a cleaner, traditional search page.",
   "homepage_url": "https://github.com/asahisuenaga/hide-google-ai",
   "icons": {
