@@ -28,7 +28,7 @@ if (pathname === "/search") {
 
 // --- Homepage logic (/ or /?zx=...) ---
 if (
-  pathname === "/" &&
+  (pathname === "/" || pathname === "/webhp") &&
   (!searchParams.has("q") || searchParams.has("zx"))
 ) {
   const hideHomepageStuff = () => {
@@ -45,15 +45,7 @@ if (
       el.style.cursor = 'default';          // remove pointer cursor
 
       // remove hover background
-      el.addEventListener('mouseenter', () => {
-        el.style.background = 'transparent';
-      });
-      el.addEventListener('mouseover', () => {
-        el.style.background = 'transparent';
-      });
-      el.addEventListener('mousemove', () => {
-        el.style.background = 'transparent';
-      });
+      ['mouseenter', 'mouseover', 'mousemove'].forEach(evt => el.addEventListener(evt, () => el.style.background = 'transparent'));
     });
 
     // change "+" icon to search icon
