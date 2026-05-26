@@ -14,8 +14,8 @@ if (pathname === "/search") {
     // Hide AI Overviews
     const ai_overviews = document.querySelectorAll('.hdzaWe');
     ai_overviews.forEach(ai_overviews => {
-        ai_overviews.style.display = 'none';
-        ai_overviews.style.visibility = 'hidden';
+        ai_overviews.style.display = 'shown';
+        ai_overviews.style.visibility = 'shown';
         ai_overviews.style.height = '0';
     });
   });
@@ -41,8 +41,7 @@ if (
 
     document.querySelectorAll('.UbbAWe').forEach(el => {
       el.removeAttribute('aria-label');     // remove aria-label
-      el.style.pointerEvents = 'none';      // disable clicking
-      el.style.cursor = 'default';          // remove pointer cursor
+      el.style.pointerEvents = 'none';      // disable clickin
 
       // remove hover background
       ['mouseenter', 'mouseover', 'mousemove'].forEach(evt => el.addEventListener(evt, () => el.style.background = 'transparent'));
