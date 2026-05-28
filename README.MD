@@ -21,10 +21,10 @@
 
 1. Download the repository and unzip the downloaded folder.
 2. Vist to `about:debugging#/runtime/this-firefox` in Firefox or `chrome://extensions/` in Chrome.
-3. For firefox, click 'Load Temporary Add-on' and select the `manifest.json`. For chrome, enable Developer Mode and click 'Load unpacked' and select the directory where you unzipped the extension files.
+3. For Firefox, click 'Load Temporary Add-on' and select the `manifest.json`. For Chrome, enable Developer Mode and click 'Load unpacked' and select the directory where you unzipped the extension files.
 
 > [!WARNING]
-> For firefox users, this temporary install is only active until Firefox is closed.
+> For Firefox users, this temporary install is only active until Firefox is closed.
 
 ## Support
 
