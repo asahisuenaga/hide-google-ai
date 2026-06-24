@@ -1,5 +1,3 @@
-<img src="icons/icon128.png" width="64" height="64">
-
 <h1 style="border-bottom: none">
   <div>
     <a href="https://chromewebstore.google.com/detail/pkbhdojajlnigelihhbclnikhidgnbeo">
