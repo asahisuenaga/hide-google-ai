@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "Hide Google AI Overviews and Mode"
+  },
+  "extensionDescription": {
+    "message": "Remove AI Overviews and AI Mode from Google Search for a cleaner experience."
+  },
+  "actionTitle": {
+    "message": "Hide Google AI Overviews and Mode"
+  },
+  "aiModeLabel": {
+    "message": "Hide AI Mode"
+  },
+  "aiOverviewsLabel": {
+    "message": "Hide AI Overviews"
+  }
+}
