@@ -1,7 +1,7 @@
 <h1 style="border-bottom: none">
   <div>
     <a href="https://chromewebstore.google.com/detail/pkbhdojajlnigelihhbclnikhidgnbeo">
-      <img  alt="Hide Google AI" src="icons/icon128.png" width="64"/>
+      <img  alt="Hide Google AI" src="src/assets/icons/icon128.png" width="64"/>
       <br>
     </a>
     Hide Google AI Overviews and Mode
