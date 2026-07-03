@@ -2,7 +2,7 @@
   "scripts": {
     "clean": "rm -rf dist && mkdir -p dist",
     "copy:assets": "cp -r src/assets dist/",
-    "minify:html": "npx html-minifier-terser src/popup.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
+    "minify:html": "npx html-minifier-terser src/popup.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/popup.html",
     "minify:js": "npx terser dist/assets/js/content.js -o dist/assets/js/content.js && npx terser dist/assets/js/popup.js -o dist/assets/js/popup.js",
     "minify:json": "node -e \"const fs = require('fs'); const path = require('path'); if(fs.existsSync('src/manifest.json')){fs.writeFileSync('dist/manifest.json', JSON.stringify(JSON.parse(fs.readFileSync('src/manifest.json', 'utf8'))))} if(fs.existsSync('src/_locales')){fs.mkdirSync('dist/_locales', {recursive:true}); fs.readdirSync('src/_locales').forEach(d => { const dp = path.join('src/_locales', d); if(fs.statSync(dp).isDirectory()){ fs.mkdirSync(path.join('dist/_locales', d), {recursive:true}); fs.readdirSync(dp).forEach(f => { if(f.endsWith('.json')){ const fp = path.join(dp, f); fs.writeFileSync(path.join('dist/_locales', d, f), JSON.stringify(JSON.parse(fs.readFileSync(fp, 'utf8')))); } }); } })} \"",
     "build": "npm run clean && npm run copy:assets && npm run minify:html && npm run minify:js && npm run minify:json"
