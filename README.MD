@@ -1,7 +1,7 @@
 <h1 style="border-bottom: none">
   <div>
     <a href="https://chromewebstore.google.com/detail/pkbhdojajlnigelihhbclnikhidgnbeo">
-      <img  alt="Hide Google AI" src="icons/icon128.png" width="64"/>
+      <img  alt="Hide Google AI" src="src/assets/icons/icon128.png" width="64"/>
       <br>
     </a>
     Hide Google AI Overviews and Mode
@@ -22,4 +22,4 @@ Remove AI-generated text overviews and AI Mode in Google search results. Get the
 
 You can also check the latest updates and files on the [releases page](https://github.com/asahisuenaga/hide-google-ai/releases).
 
-If you run into issues, please [create a new issue](https://github.com/asahisuenaga/hide-google-ai/issues/new) on GitHub or send a message on [Twitter](https://twitter.com/asahisuenaga). Please include screenshots, video recordings, your browser name, version number, and any relevant URLs.
+If you run into issues, please [create a new issue](https://github.com/asahisuenaga/hide-google-ai/issues/new). Please provide a description of the bug, instructions for reproducing the problem, screenshots, device information, browser, and extension version.

@@ -1,14 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Hide Google AI Overviews and Mode",
-  "version": "1.0.9",
-  "description": "Remove AI Overviews and Mode from search results for a cleaner, traditional search page.",
+  "name": "__MSG_extensionName__",
+  "version": "1.1.1",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
   "homepage_url": "https://github.com/asahisuenaga/hide-google-ai",
   "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_actionTitle__"
   },
   "host_permissions": [
     "*://*.google.com/*",
@@ -390,7 +396,7 @@
         "*://*.google.co.zw/*",
         "*://*.google.cat/*"
       ],
-      "js": ["content.js"],
+      "js": ["assets/js/content.js"],
       "type": "module",
       "run_at": "document_start"
     }
