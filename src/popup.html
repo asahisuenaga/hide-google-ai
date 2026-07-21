@@ -7,9 +7,10 @@
       body {
         --bg: #fff;
         --text: #202020;
+        --stone: #e8e8e8;
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Inter, Inter-Fallback, Geist, Geist-Fallback, Roboto, Roboto-Fallback, Arial, Arial-Fallback, sans-serif;
         min-width: 15rem;
-        padding: .5rem;
+        padding: 0 .25rem;
         background: var(--bg);
         color: var(--text);
       }
@@ -17,8 +18,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: .75rem;
-        margin-bottom: .5rem;
+        padding: 0.25rem 0;
       }
       .setting-row span {
         font-size: 1rem;
@@ -26,54 +26,41 @@
         flex: 1;
       }
       .switch {
+        appearance: none;
         position: relative;
-        display: inline-block;
-        width: 32px;
-        height: 18px;
-        flex-shrink: 0;
-      }
-      .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #888;
-        transition: .15s;
+        width: 36px;
+        height: 21px;
+        background-color: var(--stone);
         border-radius: 999px;
+        box-shadow: inset 0 0 0 1px #0000000a;
+        cursor: pointer;
+        transition: background .2s ease;
+        flex-shrink: 0;
+        margin: 0;
       }
-      .slider:before {
-        position: absolute;
+      .switch::before {
         content: "";
-        height: 12px;
-        width: 12px;
-        left: 3px;
-        bottom: 3px;
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        left: 2px;
+        top: 2px;
         background-color: white;
-        transition: .15s;
         border-radius: 50%;
+        box-shadow: 0 1px 2px #0000001f;
+        transition: transform .18s cubic-bezier(.2, 0, 0, 1);
       }
-      .switch input:checked + .slider {
-        background-color: #1a73e8;
+      .switch:checked {
+        background-color: #00c978;
       }
-      .switch input:focus + .slider {
-        padding: 2px;
-        box-shadow: 0 0 1px 1px #1a73e8;
-      }
-      .switch input:checked + .slider:before {
-        transform: translateX(13px);
+      .switch:checked::before {
+        transform: translateX(15px);
       }
       .header-icons {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin-top: 1rem;
+        margin-top: .5rem;
       }
       .header-link-icon {
         color: #888;
@@ -96,20 +83,13 @@
       .header-icon {
         width: 22px;
         height: 22px;
-        opacity: 1;
         user-select: none;
-      }
-      .header-logo-link {
-        cursor: pointer;
-        margin-left: 4px;
-      }
-      .header-logo-link:hover {
-        color: var(--text);
       }
       @media (prefers-color-scheme: dark) {
         body {
           --bg: #202020;
           --text: #fff;
+          --stone: #2d2d2d;
         }
       }
     </style>
@@ -117,17 +97,11 @@
   <body>
     <div class="setting-row">
       <span id="aiModeLabel">Hide AI Mode</span>
-      <label class="switch">
-        <input id="toggleAiMode" type="checkbox" />
-        <span class="slider"></span>
-      </label>
+      <input id="toggleAiMode" type="checkbox" class="switch"/>
     </div>
     <div class="setting-row">
       <span id="aiOverviewsLabel">Hide AI Overviews</span>
-      <label class="switch">
-        <input id="toggleAiOverviews" type="checkbox" />
-        <span class="slider"></span>
-      </label>
+      <input id="toggleAiOverviews" type="checkbox" class="switch"/>
     </div>
     <div class="header-icons">
       <a href="https://github.com/asahisuenaga/hide-google-ai" target="_blank" title="View Source on GitHub" class="header-link-icon header-logo-link">
